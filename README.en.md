@@ -3,7 +3,7 @@
   <h1>rpi-camera-rtsp-node</h1>
   <p><strong>Turn a Raspberry Pi CSI camera into a controllable, supply-chain-conscious RTSP node.</strong></p>
   <p>
-    <a href="https://github.com/jhihweijhan/rpi-camera-rtsp-node/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/jhihweijhan/rpi-camera-rtsp-node?style=flat-square"></a>
+    <a href="https://github.com/KarlSideProjects/rpi-camera-rtsp-node/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/KarlSideProjects/rpi-camera-rtsp-node?style=flat-square"></a>
     <img alt="Raspberry Pi" src="https://img.shields.io/badge/Raspberry%20Pi-Zero%202%20W-c51a4a?style=flat-square&logo=raspberrypi&logoColor=white">
     <img alt="Streams" src="https://img.shields.io/badge/RTSP%20%2F%20WebRTC%20%2F%20HLS-H.264-2f855a?style=flat-square">
     <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-non--commercial-blue?style=flat-square"></a>
@@ -11,15 +11,11 @@
   <p><a href="./README.md">繁體中文</a> | <strong>English</strong></p>
 </div>
 
-`rpi-camera-rtsp-node` is a Raspberry Pi camera node for SI, low-voltage,
-security integration, and commercial/public-sector evaluation. It turns a
-Raspberry Pi Zero / Zero 2 W with a CSI camera into a self-hosted RTSP / WebRTC
-/ HLS source for go2rtc, NVRs, Frigate, YOLO v10+, and other AI/CV hosts.
+**An authenticated Raspberry Pi CSI camera stream for existing NVRs, browsers and computer-vision hosts.** The Pi captures and hardware-encodes H.264; downstream tools handle recording and analysis.
 
-> [!IMPORTANT]
-> This is not a full commercial IP camera and does not guarantee that a user's
-> full BOM is non-China-made. It provides a rebuildable software node, a clear
-> supply-chain verification direction, and a commercial licensing entry point.
+This public repository contains documentation and binary releases, **not Node Agent source code**. Install on a supported Pi with a CSI camera to view RTSP, WebRTC or HLS. Without hardware, start with the [camera diagnosis case](./docs/question-and-answer.md); there is no hosted interactive demo.
+
+This is not a complete commercial IP camera. It does not provide recording, inference, central management, a warranty or a country-of-origin guarantee. Compatibility with individual downstream products needs deployment-specific testing.
 
 [Get started](#get-started) • [Use cases](#use-cases) • [Architecture](#architecture)
 • [Supply chain](#supply-chain-boundary) • [Commercial licensing](#commercial-licensing)
@@ -38,7 +34,7 @@ Raspberry Pi Zero / Zero 2 W with a CSI camera into a self-hosted RTSP / WebRTC
 Run this on the Raspberry Pi:
 
 ```bash
-curl -fsSL https://github.com/jhihweijhan/rpi-camera-rtsp-node/releases/latest/download/install.sh | \
+curl -fsSL https://github.com/KarlSideProjects/rpi-camera-rtsp-node/releases/latest/download/install.sh | \
   bash -s -- \
     --read-username viewer \
     --read-password '<your-password>'
@@ -67,8 +63,8 @@ ffplay "rtsp://viewer:<read-password>@<node-host>:8554/cam"
 | Use case | Value |
 | --- | --- |
 | SI / low-voltage / security integration | A controllable RTSP source for NVR and AI systems |
-| Commercial and public-sector evaluation | Reduced black-box camera device risk on internal networks |
-| AI/NVR pipelines | Stable input for go2rtc, Frigate, YOLO, or custom CV pipelines |
+| Commercial and public-sector evaluation | Documented installation and integrator-owned hardware verification |
+| AI/NVR pipelines | A standard RTSP entry point for downstream integration |
 | Household and non-profit use | Low-cost, self-hosted, reinstallable Raspberry Pi camera node |
 
 This project is not a fit when you need a full warranty, PoE enclosure, cloud
@@ -136,7 +132,7 @@ procurement projects, SI/low-voltage/security integration, OEM/redistribution,
 and enterprise internal operations require a separate commercial license.
 
 - Non-sensitive general questions:
-  [Commercial inquiry](https://github.com/jhihweijhan/rpi-camera-rtsp-node/issues/new?template=commercial-license.yml)
+  [Commercial inquiry](https://github.com/KarlSideProjects/rpi-camera-rtsp-node/issues/new?template=commercial-license.yml)
 - Pricing, procurement, NDA, site topology, customer information, or deployment
   details: <jhihweijhan@gmail.com>
 
@@ -156,3 +152,11 @@ Common diagnostics:
 rpicam-hello --list-cameras
 sudo systemctl status rpi-camera-mediamtx.service
 ```
+
+## Evidence and learning extensions
+
+As checked on 2026-09-16, [v0.1.17](https://github.com/KarlSideProjects/rpi-camera-rtsp-node/releases/tag/v0.1.17) provides the installer, ARM64/ARMHF/ARMv6/ARMv6 legacy bundles and a release manifest. Asset availability does not establish fresh hardware or performance acceptance; this documentation update did not repeat live Pi tests.
+
+The Q&A documents a Pi 3B/OV5647 investigation that separated power, device-tree activation and sensor response. Its unresolved hardware hypotheses are not proof of a repaired camera. This is a useful basis for controlled diagnostic exercises; no teaching-outcome study is reported.
+
+The [proprietary non-commercial LICENSE](./LICENSE) grants binary-use rights subject to its restrictions, not source or unrestricted redistribution rights. Bundled MediaMTX retains its own MIT license; that does not license the whole product as open source. See the [Traditional Chinese overview](./README.md) for the integrated project guide.
