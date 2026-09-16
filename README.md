@@ -42,7 +42,10 @@ MediaMTX 負責影像串流，Node Agent 負責設定、服務控制、mDNS 與�
 在 Pi 上執行：
 
 ```bash
-curl -fsSL https://github.com/KarlSideProjects/rpi-camera-rtsp-node/releases/latest/download/install.sh |   bash -s --     --read-username viewer     --read-password '<your-password>'
+curl -fsSL https://github.com/KarlSideProjects/rpi-camera-rtsp-node/releases/latest/download/install.sh | \
+  bash -s -- \
+    --read-username viewer \
+    --read-password '<your-password>'
 ```
 
 密碼由安裝者設定，installer 不會替你產生或公開列印。需要限制來源 IP 時，可加 `--read-ip-allowlist '<client-ip-or-cidr>'`。完整帳密、架構判斷與相機排查請見 [Q&A](./docs/question-and-answer.zh-TW.md)。
