@@ -1,0 +1,38 @@
+rpi-camera-rtsp-node — Proprietary Non-Commercial License
+Copyright (c) 2026 jhihweijhan. All rights reserved.
+
+1. Grant. You are granted a personal, non-exclusive, non-transferable, revocable
+   license to download, install, and run the provided binary releases of
+   rpi-camera-rtsp-node (the "Software") solely for personal and other
+   NON-COMMERCIAL purposes.
+
+2. Non-Commercial Only. Use of the Software in or for any commercial product,
+   service, or activity — including use by a for-profit entity in the course of
+   its business, or any use that generates revenue — is NOT permitted without a
+   separate written commercial license from the copyright holder.
+
+3. No Source Rights. The Software is distributed in binary form only. No rights
+   to the source code are granted.
+
+4. No Reverse Engineering. You may not decompile, disassemble, reverse engineer,
+   or otherwise attempt to derive the source code of the Software, except to the
+   extent such restriction is expressly prohibited by applicable law.
+
+5. No Redistribution. You may not sell, sublicense, rent, lease, or redistribute
+   the Software without prior written permission from the copyright holder.
+
+6. Third-Party Components. The Software bundles MediaMTX, which is distributed
+   under the MIT License by its respective authors. That component remains
+   governed by its own license; nothing here restricts your rights under it.
+
+7. No Warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+8. Limitation of Liability. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR
+   ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT,
+   OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE
+   USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For commercial licensing inquiries, contact the copyright holder at
+<jhihweijhan@gmail.com>.

@@ -1,5 +1,7 @@
 # rpi-camera-rtsp-node
 
+> **授權：僅限非商業用途，歡迎研究、教學與交流。** 完整條款見 [LICENSE](LICENSE)，適用範圍與第三方例外見 [授權規範](LICENSING.md)。
+
 <img src="./docs/assets/rpi-camera-rtsp-node.svg" width="96" alt="Raspberry Pi 相機串流節點圖示">
 
 **把 Raspberry Pi 與 CSI 相機變成需要帳密的網路影像來源，供既有 NVR、瀏覽器或電腦視覺主機接收。**
@@ -97,7 +99,7 @@ sudo systemctl status rpi-camera-mediamtx.service
 
 硬體產地須依實際料號、收貨標籤與採購文件確認；本專案不保證完整 BOM 產地，也不提供採購合規背書。導入者可使用 [供應鏈自我驗證清單](./docs/supply-chain-verification.zh-TW.md)。本專案不含完整商用 IP camera 的外殼、保固、PoE 或 SLA。
 
-依 [LICENSE](./LICENSE)，本產品為專有、非商業用途二進位軟體，沒有授予原始碼或任意再散布權利。商業使用、企業營運與 SI／政府標案導入請先聯絡權利人確認授權。隨附的 MediaMTX 依其 MIT 授權處理，不能把該元件授權套用到整個產品。
+本庫自有內容及明確隨附新 [LICENSE](./LICENSE) 的發行採非商用研究授權，允許符合條件的研究、修改與再散布，但不承諾公開私有原始碼。既有二進位 release 仍依其隨附條款；版本界線見 [LICENSING.md](LICENSING.md)。商業使用、企業營運及營利 SI／標案導入需另行書面授權；MediaMTX 保留獨立 MIT 權利。
 
 - 一般商用詢問：[Commercial inquiry](https://github.com/KarlSideProjects/rpi-camera-rtsp-node/issues/new?template=commercial-license.yml)。
 - 報價、採購、NDA 與敏感部署資訊：<jhihweijhan@gmail.com>。
