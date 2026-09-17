@@ -127,9 +127,10 @@ The OS must see the CSI camera through `rpicam-hello --list-cameras` or
 ## Commercial licensing
 
 Personal, household, non-profit educational, and other non-commercial use may be
-free under the public license terms. Commercial deployment, government
-procurement projects, SI/low-voltage/security integration, OEM/redistribution,
-and enterprise internal operations require a separate commercial license.
+free under the public license terms. Commercial deployment, paid procurement or system-integration projects,
+managed-service delivery, and enterprise internal operations require a separate
+written commercial license. Noncommercial research and teaching are welcome
+under the applicable version of the LICENSE.
 
 - Non-sensitive general questions:
   [Commercial inquiry](https://github.com/KarlSideProjects/rpi-camera-rtsp-node/issues/new?template=commercial-license.yml)
@@ -159,4 +160,4 @@ As checked on 2026-09-16, [v0.1.17](https://github.com/KarlSideProjects/rpi-came
 
 The Q&A documents a Pi 3B/OV5647 investigation that separated power, device-tree activation and sensor response. Its unresolved hardware hypotheses are not proof of a repaired camera. This is a useful basis for controlled diagnostic exercises; no teaching-outcome study is reported.
 
-The [proprietary non-commercial LICENSE](./LICENSE) grants binary-use rights subject to its restrictions, not source or unrestricted redistribution rights. Bundled MediaMTX retains its own MIT license; that does not license the whole product as open source. See the [Traditional Chinese overview](./README.md) for the integrated project guide.
+The custom [noncommercial research LICENSE](./LICENSE) permits noncommercial research, modification, and redistribution of covered material. It does not promise private source access. Existing binary releases retain their accompanying terms; see [scope and version notices](./LICENSING.md). Bundled MediaMTX retains its independent MIT license; this does not make the whole product open source. See the [Traditional Chinese overview](./README.md) for the integrated project guide.
